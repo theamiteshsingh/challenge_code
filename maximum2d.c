@@ -13,7 +13,6 @@ int main()
         {
             scanf("%d",&a[i][j]);
         }
-        
     }
     printf("Numbers are::\n");
     for ( i = 0; i < r; i++)
