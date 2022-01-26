@@ -51,7 +51,7 @@ int add(){
 }
 int sub()
 {
-    int b[100],sub=0,j,p;
+    int b[100],j,p;
     printf("Enter numbers to be subtracted:::");
     scanf("%d",&p);
     printf("Enter %d numbers::",p);
@@ -63,9 +63,10 @@ int sub()
     {
         printf("%d\t",b[j]);
     }
-    for ( j = 0; j < p; j++)
+    int sub =b[0];
+    for ( j = 1; j < p; j++)
     {
-        sub=b[j]-sub;
+        sub=sub-b[j];
     }
     printf("\nsubtraction of %d numbers is %d", p, sub);
 }
