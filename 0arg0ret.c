@@ -1,10 +1,10 @@
 #include<stdio.h>
-void grtNum();
+void GrtNum();
 void main()
 {
-    grtNum();
+    GrtNum();
 }
-void grtNum()
+void GrtNum()
 {
     int i,j;
     printf("Enter two numbers you want to compare:::");
