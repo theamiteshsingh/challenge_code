@@ -9,6 +9,8 @@ struct Books
     int book_id;
 };
 
+/*Function declaration*/
+
 void printBook(struct Books book );
 
 int main()
