@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 struct Books
 {
@@ -11,7 +11,7 @@ struct Books
 
 /*Function declaration*/
 
-void printBook(struct Books book );
+void printBook(struct Books book);
 
 int main()
 {
@@ -22,25 +22,26 @@ int main()
     strcpy(Book1.title, "Amitesh singh books");
     strcpy(Book1.author, "Amitesh singh");
     strcpy(Book1.subject, "Basics of life principles");
-    Book1.book_id=565;
+    Book1.book_id = 565;
 
     /*Book 2 specification*/
 
     strcpy(Book2.title, "Kanupriya s");
     strcpy(Book2.author, "Kanu");
     strcpy(Book2.subject, "Basics of life happines techiques");
-    Book2.book_id=545;
+    Book2.book_id = 545;
 
     /*print book 1 info*/
 
-    printBook( Book1 );
+    printBook(Book1);
 
     /*print book 1 info*/
 
-    printBook( Book2 );
+    printBook(Book2);
 }
-void printBook(struct Books book ){
-    
+void printBook(struct Books book)
+{
+
     printf("Book title:: %s\n", book.title);
     printf("Book author:: %s\n", book.author);
     printf("Book subject:: %s\n", book.subject);
