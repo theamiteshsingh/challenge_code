@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "corecrt_stdio_config.h": "c",
+        "corecrt.h": "c",
+        "_mingw.h": "c",
+        "_mingw_mac.h": "c",
+        "_mingw_secapi.h": "c",
+        "_cygwin.h": "c"
+    }
+}

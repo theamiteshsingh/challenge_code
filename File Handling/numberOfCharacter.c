@@ -13,7 +13,9 @@ int main()
     {
         ch = fgetc(fp);
         if (ch == EOF)
+        {
             break;
+        }
         c=c+1;
     }
     printf("Number of characters::%d", c);
