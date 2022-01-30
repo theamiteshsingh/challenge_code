@@ -8,14 +8,14 @@ struct Distance
 int main()
 {
     // Details of 1st distance
-    printf("Enter 1st distance::\n");
+    printf("Enter 1st distance\n");
     printf("Enter feet:: ");
     scanf("%d", &d1.feet);
     printf("Enter inch:: ");
     scanf("%d", &d1.inch);
 
     // Details of 2nd distance
-    printf("Enter 2st distance::\n");
+    printf("Enter 2st distance\n");
     printf("Enter feet:: ");
     scanf("%d", &d2.feet);
     printf("Enter inch:: ");
@@ -29,7 +29,7 @@ int main()
     while (res.inch >= 12.0)
     {
         res.inch = res.inch - 12.0;
-        ++res.feet;
+        res.feet=res.feet+1;
     }
     printf("\nSum of distance = %d ' %f", res.feet, res.inch);
 }
