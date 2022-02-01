@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 struct Node
@@ -8,10 +8,10 @@ struct Node
 };
 void linkedlistTransversal(struct Node *ptr)
 {
-    while (ptr!=NULL)
+    while (ptr != NULL)
     {
-        printf("Elements : %d\n",ptr->data);
-        ptr=ptr->next;
+        printf("Elements : %d\n", ptr->data);
+        ptr = ptr->next;
     }
 }
 int main()
@@ -22,26 +22,26 @@ int main()
     struct Node *fourth;
     struct Node *fifth;
 
-    head=(struct Node*)malloc(sizeof(struct Node));
-    second=(struct Node*)malloc(sizeof(struct Node));
-    third=(struct Node*)malloc(sizeof(struct Node));
-    fourth=(struct Node*)malloc(sizeof(struct Node));
-    fifth=(struct Node*)malloc(sizeof(struct Node));
+    head = (struct Node *)malloc(sizeof(struct Node));
+    second = (struct Node *)malloc(sizeof(struct Node));
+    third = (struct Node *)malloc(sizeof(struct Node));
+    fourth = (struct Node *)malloc(sizeof(struct Node));
+    fifth = (struct Node *)malloc(sizeof(struct Node));
 
-    head->data=7;
-    head->next=second;
-    
-    second->data=41;
-    second->next=third;
-    
-    third->data=45;
-    third->next=fourth;
-    
-    fourth->data=75;
-    fourth->next=fifth;
+    head->data = 7;
+    head->next = second;
 
-    fifth->data=96;
-    fifth->next=NULL;
+    second->data = 41;
+    second->next = third;
+
+    third->data = 45;
+    third->next = fourth;
+
+    fourth->data = 75;
+    fourth->next = fifth;
+
+    fifth->data = 96;
+    fifth->next = NULL;
 
     linkedlistTransversal(head);
 }

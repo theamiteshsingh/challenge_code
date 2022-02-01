@@ -56,14 +56,14 @@ struct Node *insertatend(struct Node *head, int data)
     ptr->next = NULL;
     return head;
 }
-//case 4
+// case 4
 struct Node *insertafteernode(struct Node *head, struct Node *prevnode, int data)
 {
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data = data;
 
-    ptr->next=prevnode->next;
-    prevnode->next=ptr;
+    ptr->next = prevnode->next;
+    prevnode->next = ptr;
     return head;
 }
 
@@ -102,6 +102,6 @@ int main()
     // head = insertatfirst(head, 21);
     // head = insertatindex(head, 78, 3);
     // head=insertatend(head,452);
-    head=insertafteernode(head,fifth,452);
+    head = insertafteernode(head, fifth, 452);
     linkedlistTransversal(head);
 }
