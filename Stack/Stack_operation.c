@@ -35,12 +35,26 @@ void push(struct stack *ptr, int val)
 {
     if (isFull(ptr))
     {
-        printf("stack overfloweded, Cannot push %d to the stack\n");
+        printf("stack overfloweded, Cannot push %d to the stack\n",val);
     }
     else
     {
         ptr->top++;
         ptr->arr[ptr->top] = val;
+    }
+}
+
+void pop(struct stack *ptr, int val)
+{
+    if (isFull(ptr))
+    {
+        printf("stack underflowfloweded, Cannot pop from the stack\n");
+        return -1;
+    }
+    else
+    {
+        int val=ptr->arr[ptr->top];
+        ptr->top--;
     }
 }
 int main()
@@ -55,6 +69,16 @@ int main()
     printf("Before pushing, EMPTY:::%d\n", isEmpty(sp));
 
     push(sp, 45);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 46);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 45);
+    push(sp, 75);
 
     printf("After pushing, FULL::: %d\n", isFull(sp));
     printf("After pushing, EMPTY:::%d\n", isEmpty(sp));
