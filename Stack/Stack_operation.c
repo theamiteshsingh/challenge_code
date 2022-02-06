@@ -31,11 +31,11 @@ int isFull(struct stack *ptr)
     }
 }
 
-void push(struct stack *ptr, int val)
+int push(struct stack *ptr, int val)
 {
     if (isFull(ptr))
     {
-        printf("stack overfloweded, Cannot push %d to the stack\n",val);
+        printf("stack overfloweded, Cannot push %d to the stack\n", val);
     }
     else
     {
@@ -44,7 +44,7 @@ void push(struct stack *ptr, int val)
     }
 }
 
-void pop(struct stack *ptr, int val)
+int pop(struct stack *ptr)
 {
     if (isFull(ptr))
     {
@@ -53,8 +53,9 @@ void pop(struct stack *ptr, int val)
     }
     else
     {
-        int val=ptr->arr[ptr->top];
+        int val = ptr->arr[ptr->top];
         ptr->top--;
+        return val;
     }
 }
 int main()
@@ -82,5 +83,7 @@ int main()
 
     printf("After pushing, FULL::: %d\n", isFull(sp));
     printf("After pushing, EMPTY:::%d\n", isEmpty(sp));
+
+    printf("Popped %d from the stack\n", pop(sp));
     return 0;
 }
