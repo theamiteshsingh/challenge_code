@@ -95,6 +95,10 @@ int parenthesisMatch(char *exp)
 }
 int main()
 {
+    struct stack *sp;
+    sp->size = 100;
+    sp->top = -1;
+    sp->arr = (char *)malloc(sp->size * sizeof(char));
     char *exp = "8)*(9)";
     if (parenthesisMatch(exp))
     {
