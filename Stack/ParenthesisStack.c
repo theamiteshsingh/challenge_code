@@ -63,7 +63,7 @@ char pop(struct stack *ptr)
 int parenthesisMatch(char *exp)
 {
     struct stack *sp;
-    sp->size = 100;
+    sp->size = 500;
     sp->top = -1;
     sp->arr = (char *)malloc(sp->size * sizeof(char));
 
