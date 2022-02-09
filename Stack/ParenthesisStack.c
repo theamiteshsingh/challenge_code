@@ -62,8 +62,10 @@ char pop(struct stack *ptr)
 
 int parenthesisMatch(char *exp)
 {
-
-    struct stack *sp = (struct stack *)malloc(sizeof(struct stack));
+    struct stack *sp;
+    sp->size = 100;
+    sp->top = -1;
+    sp->arr = (char *)malloc(sp->size * sizeof(char));
 
     for (int i = 0; exp[i] != '\0'; i++)
     {
@@ -92,10 +94,7 @@ int parenthesisMatch(char *exp)
 }
 int main()
 {
-    struct stack *sp;
-    sp->size = 100;
-    sp->top = -1;
-    sp->arr = (char *)malloc(sp->size * sizeof(char));
+
     char *exp = "8)*(9)";
     if (parenthesisMatch(exp))
     {
