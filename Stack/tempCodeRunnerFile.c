@@ -1,3 +1,1 @@
-printf("Popped %d from the stack\n", pop(sp));
-    printf("Popped %d from the stack\n", pop(sp));
-    printf("Popped %d from the stack\n", pop(sp));
+struct stack *sp = (struct stack *)malloc(sizeof(struct stack));
