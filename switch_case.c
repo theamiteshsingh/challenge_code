@@ -42,7 +42,7 @@ int main()
     case 12:
         printf("Its december");
     default:
-        printf("Wrong input...................Try again!!!!");
+        printf("Wrong input...................Try again!!!!!!");
         break;
     }
     return 0;
