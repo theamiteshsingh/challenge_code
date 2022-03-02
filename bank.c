@@ -2,7 +2,7 @@
 int main()
 {
     int i;
-    printf("Enter your choice");
+    printf("Enter your choice::::::");
     scanf("%d",&i);
     switch (i)
     {
