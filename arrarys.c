@@ -10,7 +10,7 @@ int main()
     printf("Numbers are:::");
     for ( i = 0; i <= 10; i++)
     {
-        printf("a[%d]=%d\n",i , a[i]);
+        printf("a[%d]=%d\t",i , a[i]);
     }
     return 0;
 }
