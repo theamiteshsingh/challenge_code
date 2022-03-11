@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int add();
 int sub();
 int mul();
